@@ -14,6 +14,7 @@ system("pause");
 - Uso de ponto e vírgula em vez de vírgula na declaração de variáveis
 - Na mesma linha, uso de dois pontos(:) em vez do ponto e vírgula(;) no final da instrução
 - Variável d não declarada antes de ser impressa no printf
+- O system("pause") minúsculo
 - Sem retorno no final da main()
 
 
@@ -28,7 +29,7 @@ system("pause");
 int main() {
     int a = 1, b = 2, c = 3, d = 4;
     printf("Os números são: %d %d %d %d\n", a, b, c, d);
-    system("pause");
+    system("PAUSE");
     return 0;
 }
 ```

@@ -9,7 +9,7 @@
 #include <stdlib.h>/* Para system() */
 int main() /* Função main */ 
 { /* início do corpo da função main */
-system('cls');
+system("cls");
 printf("Primeiro programa."); /* Chamada à função printf */
 
 int numero=0; /* Criei uma variável e inicializei com valor 0*/

@@ -5,6 +5,6 @@ int main(){
     system("cls"); //Limpa terminal
     float numeroEuler = 2.71828;
 
-    printf("A constante de Euler = %.2f", numeroEuler);
+    printf("A constante de Euler = %.3f", numeroEuler);
     return 0;
 }

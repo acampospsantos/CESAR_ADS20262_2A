@@ -29,7 +29,7 @@ main()
 
 int main(){
     printf("Linguagem C");
-    system("pause");
+    system("PAUSE");
     return 0;
 }
 ```
