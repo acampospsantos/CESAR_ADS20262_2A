@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int main(void) {
+int main() {
     int dia, mes, ano;
 
     printf("Digite uma data no formato dd/mm/aaaa: ");
