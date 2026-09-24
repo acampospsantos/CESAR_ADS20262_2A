@@ -2,44 +2,37 @@
 
 ```
 //Valores das variáveis - INÍCIO
-int a = 1, b = 2, c = 3, d = 4;
+int a = 2, b = 4, c = 5, d = 10;
 ```
 
 ### Respostas:
 1. ```a += b + c;```
-- A expressão à direita é avaliada primeiro: b + c --> 2 + 3 => = 5
-- A atribuição composta é executada: a = a + 5 --> 1 + 5 => a = 6 (novo valor de a é 6)
-- Valores atuais: a = 6, b = 2, c = 3, d = 4
+- A expressão à direita é avaliada primeiro: b + c --> 4 + 5 => = 9
+- A atribuição composta é executada: a = a + 5 --> 2 + 9 => a = 11 (novo valor de a é 11)
+- Valores atuais: a = 11, b = 4, c = 5, d = 10
 
-2. ```b *= c = d + 2;```
-- Devido à associatividade da direita para a esquerda, resolvemos c = d + 2 primeiro:
-   - d + 2 --> 4 + 2 => c = 6 (novo valor de c é 6)
+2. ```b *= c = d - 2;```
+- Devido à associatividade da direita para a esquerda, resolvemos c = d - 2 primeiro:
+   - d - 2 --> 10 - 2 => c = 8 (novo valor de c é 8)
 - Em seguida, resolvemos b *= c:
-   - b = b * 6 --> 2 * 6 => b = 12 (novo valor de b é 12)
-- Valores atuais: a = 6, b = 12, c = 6, d = 4
+   - b = b * 8 --> 4 * 8 => b = 32 (novo valor de b é 32)
+- Valores atuais: a = 11, b = 32, c = 8, d = 10
 
-3. ```d %= a + a + a;```
+3. ```d %= a + 3;```
 - A expressão à direita é avaliada primeiro: 
-  - a + a + a --> 6 + 6 + 6 => = 18
+  - a + 3 --> 11 + 3 => = 14
 - A atribuição composta é executada:
-  - d = d % 18 --> 4 % 18 = 4 => d = 4 (novo valor de d é 4)
-- Valores atuais: a = 6, b = 12, c = 6, d = 4
+  - d = d % 14 --> 10 % 14 = 4 => d = 10
+- Valores atuais: a = 11, b = 32, c = 8, d = 10
 
-4. ```d -= c -= b -= a;```
+4. ```a += b += c += 5;```
 - Atribuições encadeadas são avaliadas da direita para a esquerda:
-  - b -= a --> b = b - a --> 12 - 6 => b = 6 (novo valor de b é 6)
-  - c -= b --> c = c - 6 --> 6 - 6 => c = 0 (novo valor de c é 0)
-  - d -= c --> d = d - 0 --> 4 - 0 => d = 4 (novo valor de d é 4)
-- Valores atuais: a = 6, b = 6, c = 0, d = 4
-
-5. ```a += b += c += 7;```
-- Novamente, avaliamos da direita para a esquerda:
-  - c += 7 --> c = c + 7 --> 0 + 7 => c = 7 (novo valor de c é 7)
-  - b += c --> b = b + 7 --> 6 + 7 => b = 13 (novo valor de b é 13)
-  - a += b --> a = a + 13 --> 6 + 13 => a = 19 (novo valor de a é 19)
-- Valores atuais: a = 19, b = 13, c = 7, d = 4
+  - c += 5 --> c = c + 5 --> 8 + 5 => c = 13 (novo valor de c é 13)
+  - b += c --> b = b + c --> 32 + 13 => c = 0 (novo valor de b é 45)
+  - a += b --> a = a + b --> 11 + 45 => a = 56 (novo valor de a é 56)
+- Valores atuais: a = 56, b = 45, c = 13, d = 10
 
 ```
 //Valores das variáveis - FINAL
-int a = 19, b = 13, c = 7, d = 4
+int a = 56, b = 45, c = 13, d = 10
 ```
