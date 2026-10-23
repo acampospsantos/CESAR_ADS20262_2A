@@ -33,8 +33,7 @@ int main() {
 }
 ```
 
-c) Limitações do Operador Ternário
-Não, o operador ternário não pode substituir qualquer estrutura if-else.
+c) Não, o operador ternário não pode substituir qualquer estrutura if-else.
 - Natureza de Expressão: O operador ternário é uma expressão que produz um valor (retorna um resultado), enquanto o if-else é uma instrução de controle de fluxo.
 - Limitação de Bloco de Comandos: O ternário não foi feito para executar blocos complexos de código com múltiplas instruções (como chamadas de funções encadeadas, laços de repetição ou várias atribuições).
 - Tipagem dos Retornos: Ambas as ramificações do ternário (após ? e :) precisam retornar valores compatíveis com o tipo esperado na atribuição ou avaliação, o que impede a execução de ações puramente procedurais sem retorno direto.

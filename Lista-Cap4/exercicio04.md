@@ -1,8 +1,7 @@
 # 📚 Questão 04
 
 ### Respostas:
-a) Saída no Terminal e Explicação
-A saída exata gerada no terminal será:
+a) A saída exata gerada no terminal será:
 ```
 Prata
 Ouro

@@ -1,7 +1,8 @@
 # 📚 Questão 06
 
 ### Respostas:
-a) Saída para idade = 65 e Explicação
+a) Saída para idade = 65 
+
 Saída impressa:
 ```
 Idoso
